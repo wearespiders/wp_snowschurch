@@ -1,11 +1,224 @@
 /*
-Theme Name:         Roots
-Theme URI:          http://www.rootstheme.com/
-Description:        Roots is a starting WordPress theme made for developers that's based on HTML5 Boilerplate and Bootstrap. <a href="https://github.com/retlehs/roots/contributors">Contribute on GitHub</a>
-Version:            6.3.0
-Author:             Ben Word
-Author URI:         http://benword.com/
-
-License:            MIT License
-License URI:        http://opensource.org/licenses/MIT
+Theme Name:         Snows Church
+Theme URI:          http://www.spiders.co.in/
+Description:        Visit http://www.snowschurch.org
+Version:            1.0
+Author:             Spiders
+Author URI:         http://www.spiders.co.in/
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: Snows Church
 */
+
+body
+{
+	margin:0;
+	padding:0;
+	background-color:#cfcece;
+	font-family: Verdana, sans-serif, Helvetica, Arial;
+}
+
+.root
+{
+	width:980px;
+	margin:0 auto;
+	background-color:#FFF;
+}
+
+.page-header
+{
+	height:150px;
+	padding:0;
+}
+	.logo-container
+	{
+		background-image:url(images/logo-transparent.png);
+		background-repeat:no-repeat;
+		height:150px;
+		background-position:bottom left;
+	}
+
+.top-navbar
+{
+	height:40px;
+}
+
+.page-banner
+{
+	background-image:url(images/page-banner01);
+	height:250px;
+}
+
+.root-page-body
+{
+}
+.root-leftbar
+{
+	width:190px;
+	float:left;
+}
+
+.leftbar
+{
+	width:141px; /* 169(total width) - 14*2 (padding) */
+	float:left;
+	padding:14px;
+}
+.leftbar-divider
+{
+	float:left;
+	height:620px;
+	width:21px;
+	background-image:url(images/leftbar-verticalline);
+	background-position:right;
+	background-repeat:no-repeat;
+}
+
+
+.root-page-content
+{
+	float:left;
+	background-color:#FFF;
+	width:512px; /* 540(total width) - 14*2 (padding) */
+	padding-top:0px;
+	padding-left:12px;
+	padding-right:16px;
+}
+
+/* Breacrumb Navigation */
+.breadcrumb{
+    width:100%;
+    float:left;
+    padding:0 0 0 0px;
+    margin:9px 0 0 0;
+    font-size:12px;
+    clear:both;
+}
+.delimiter{
+    color:#000;
+    background-color:inherit;
+}
+.delimiter1{
+    color: #627FC3;
+    background-color:inherit;
+}
+
+/* Content */
+contenttitle
+{
+	font-size: 20px;
+	color:#02a5e6;
+}
+content
+{
+	font-size: 14px;
+	line-height:25px;
+	text-align:justify;
+	color:#454343;
+}
+
+.root-rightbar
+{
+	width:250px;
+	float:left;
+}
+
+.rightbar-titleplate
+{
+	background-image:url(images/rightbar-titleplate.jpg);
+	height:51px;
+	background-repeat:no-repeat;
+}
+.rightbar-title
+{
+	padding-left:14px;
+	padding-top:14px;
+	color:#666;
+	font-size:14px;
+}
+.rightbar-content
+{
+	width:204px; /* 250px(total width) - margin (14+2) - padding (14*2) - border (1*2) */
+	padding-left:14px;
+	padding-right:14px;
+	background-color:#ecebe9;
+	border-left:#d8d7d5 solid 1px; 
+	border-right:#d8d7d5 solid 1px;
+	padding-bottom:30px;
+}
+.rightbar-endscroll
+{
+	background-image:url(images/rightbar-endscroll.jpg);
+	background-repeat:no-repeat;
+	height:92px;
+}
+
+.bottom-navbar
+{
+	clear:both;
+	background-color:#000;
+}
+.footer-authorbar
+{
+	clear:both;
+	background-color:#00a1e4;
+	height:30px;
+}
+.footer-disclaimer
+{
+	clear:both;
+}
+
+/*
+==============================================================
+Gradient Effects
+==============================================================
+*/
+.page-header-gradient
+{
+	background: rgb(7,135,219); /* Old browsers */
+
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzA3ODdkYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjU4JSIgc3RvcC1jb2xvcj0iIzA1YWZmOCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+
+background: -moz-linear-gradient(left,  rgba(7,135,219,1) 0%, rgba(5,175,248,1) 58%); /* FF3.6+ */
+
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(7,135,219,1)), color-stop(58%,rgba(5,175,248,1))); /* Chrome,Safari4+ */
+
+background: -webkit-linear-gradient(left,  rgba(7,135,219,1) 0%,rgba(5,175,248,1) 58%); /* Chrome10+,Safari5.1+ */
+
+background: -o-linear-gradient(left,  rgba(7,135,219,1) 0%,rgba(5,175,248,1) 58%); /* Opera 11.10+ */
+
+background: -ms-linear-gradient(left,  rgba(7,135,219,1) 0%,rgba(5,175,248,1) 58%); /* IE10+ */
+
+background: linear-gradient(to right,  rgba(7,135,219,1) 0%,rgba(5,175,248,1) 58%); /* W3C */
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0787db', endColorstr='#05aff8',GradientType=1 ); /* IE6-8 */
+
+
+}
+
+.top-navbar-gradient
+{
+background: rgb(91,91,91); /* Old browsers */
+
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzViNWI1YiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+
+background: -moz-linear-gradient(top,  rgba(91,91,91,1) 0%, rgba(0,0,0,1) 100%); /* FF3.6+ */
+
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(91,91,91,1)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+
+background: -webkit-linear-gradient(top,  rgba(91,91,91,1) 0%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+
+background: -o-linear-gradient(top,  rgba(91,91,91,1) 0%,rgba(0,0,0,1) 100%); /* Opera 11.10+ */
+
+background: -ms-linear-gradient(top,  rgba(91,91,91,1) 0%,rgba(0,0,0,1) 100%); /* IE10+ */
+
+background: linear-gradient(to bottom,  rgba(91,91,91,1) 0%,rgba(0,0,0,1) 100%); /* W3C */
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b5b5b', endColorstr='#000000',GradientType=0 ); /* IE6-8 */
+
+}
