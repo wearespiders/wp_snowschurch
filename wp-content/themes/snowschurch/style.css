@@ -16,7 +16,7 @@ body
 	padding:0;
 	background-image:url(images/ravenna.png);
 	background-repeat:repeat;
-	font-family:Arial, Helvetica, sans-serif;
+	font-family:'Droid Sans', sans-serif;
 }
 
 .root
@@ -208,14 +208,13 @@ Left navigation sub-menus
 */
 #leftnav
 {
-font-size:12px;
+font-size:13px;
 }
 
 #leftnav a
 {
 text-decoration:none;
 color:#00a1e4;
-text-transform:uppercase;
 }
 
 
@@ -229,21 +228,25 @@ padding:0;
 {
 list-style-type:none;
 padding-left:14px;
-padding-top:7px;
-padding-bottom:7px;
+padding-top:10px;
+padding-bottom:10px;
 /*border-bottom:#CCC 1px solid ;*/
-border-bottom-style:solid;
-border-bottom-width:1px;
-border-bottom:-moz-linear-gradient(left center, transparent, black, transparent);
-border-bottom:-webkit-gradient(linear, left center, right center,
-                                 color-stop(0, transparent),
-                                 color-stop(0.5, black),
-                                 color-stop(1, transparent));
+/* The background is used to specify the border background */
+    background: -moz-linear-gradient(45deg, #F2F2F2, #fff);
+    background: -webkit-linear-gradient(45deg, #F2F2F2, #fff);
+    /* Background origin is the padding box by default.
+    Override to make the background cover the border as well. */
+    -moz-background-origin: border;
+    background-origin: border-box;
+    /* A transparent border determines the width */
+    border-bottom: 1px solid transparent;
+    border-radius: 0px;
+    box-shadow: inset -999px 0 0 #fff; /* The background color */
 }
 
 #leftnav li:hover
 {
-background-color:#ccc;
+text-decoration:underline;
 }
 
 

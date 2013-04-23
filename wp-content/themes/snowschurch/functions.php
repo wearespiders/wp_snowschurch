@@ -253,15 +253,13 @@ function my_custom_submenu() {
       break;
     }
   }
-  
+ 
   // display the submenu
-  echo "<ul>";
-  
+  echo "<ul><li>".the_title()."</li>";
   foreach ( $menu_items as $item ) {
     if ( $item->menu_item_parent == $current_menu_id ) {
       $class = ( $item->object_id == $post->ID ) ? "class='current_page_item'" : "";
-	  $str = mb_convert_case($item->title, MB_CASE_TITLE, "UTF-8");
-      echo "<li {$class}><a href='{$item->url}'>{$str}</a></li>";
+      echo "<li {$class}><a href='{$item->url}'>{$item->title}</a></li>";
     }
   }
   
