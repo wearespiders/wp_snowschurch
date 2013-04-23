@@ -1,10 +1,5 @@
 <div class="leftbar">
-<p>History</p>
-<p>Mother Mary Statue OLS</p>
-<p>Menu 1</p>
-<p>Menu 1</p>
-<p>Menu 1</p>
-<p>Menu 1</p>
-<p>Menu 1</p>
+<div id="leftnav"><?php my_custom_submenu(); ?></div>
 </div>
+
 <div class="leftbar-divider"></div>

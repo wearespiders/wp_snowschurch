@@ -233,4 +233,39 @@ function wp_bac_breadcrumb() {
        echo '</div>';     
     }   
 }
+
+/***********************************************************************
+* @URL:   http://christianvarga.com/blog/2012/12/how-to-get-submenu-items-from-a-wordpress-menu-based-on-parent-or-sibling/
+* @Description: To get submenu items from a WordPress menu based on parent or sibling
+***********************************************************************/
+ 
+function my_custom_submenu() {
+  global $post;
+  
+  $menu_items = wp_get_nav_menu_items('Menu');
+  $current_menu_id = 0;
+  
+  // get current top level menu item id
+  foreach ( $menu_items as $item ) {
+    if ( $item->object_id == $post->ID ) {
+      // if it's a top level page, set the current id as this page. if it's a subpage, set the current id as the parent
+      $current_menu_id = ( $item->menu_item_parent ) ? $item->menu_item_parent : $item->ID;
+      break;
+    }
+  }
+  
+  // display the submenu
+  echo "<ul>";
+  
+  foreach ( $menu_items as $item ) {
+    if ( $item->menu_item_parent == $current_menu_id ) {
+      $class = ( $item->object_id == $post->ID ) ? "class='current_page_item'" : "";
+	  $str = mb_convert_case($item->title, MB_CASE_TITLE, "UTF-8");
+      echo "<li {$class}><a href='{$item->url}'>{$str}</a></li>";
+    }
+  }
+  
+  echo "</ul>";
+}
+
 ?>

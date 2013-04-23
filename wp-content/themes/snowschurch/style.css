@@ -45,7 +45,7 @@ body
 
 .page-banner
 {
-	background-image:url(images/page-banner01);
+	background-image:url(images/page-banner01.jpg);
 	height:250px;
 }
 
@@ -60,16 +60,16 @@ body
 
 .leftbar
 {
-	width:141px; /* 169(total width) - 14*2 (padding) */
+	width:169px; /* 169(total width) - 14*2 (padding) */
 	float:left;
-	padding:14px;
+	padding-top:14px;
 }
 .leftbar-divider
 {
 	float:left;
 	height:620px;
 	width:21px;
-	background-image:url(images/leftbar-verticalline);
+	background-image:url(images/leftbar-verticalline.jpg);
 	background-position:right;
 	background-repeat:no-repeat;
 }
@@ -168,6 +168,44 @@ content
 {
 	clear:both;
 }
+
+
+/*
+==============================================================
+Left navigation sub-menus
+==============================================================
+*/
+#leftnav
+{
+font-size:12px;
+}
+
+#leftnav a
+{
+text-decoration:none;
+color:#00a1e4;
+}
+
+
+#leftnav ul
+{
+margin:0;
+padding:0;
+}
+
+#leftnav li
+{
+list-style-type:none;
+padding-left:14px;
+padding-top:7px;
+padding-bottom:7px;
+}
+
+#leftnav li:hover
+{
+background-color:#ccc;
+}
+
 
 /*
 ==============================================================
