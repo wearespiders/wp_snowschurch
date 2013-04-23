@@ -17,29 +17,29 @@
 // ** MySQL settings - You can get this info from your web host ** //
 
 /** The name of the database for WordPress */
-define('DB_NAME', 'wp_snowschurch');
+//define('DB_NAME', 'wp_snowschurch');
 
 /** MySQL database username */
-define('DB_USER', 'root');
+//define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'admin');
+//define('DB_PASSWORD', 'admin');
 
 /** MySQL hostname */
-define('DB_HOST', '127.0.0.1');
+//define('DB_HOST', '127.0.0.1');
 
 
 /** The name of the database for WordPress */
-//define('DB_NAME', 'tutyspi_snowschurch');
+define('DB_NAME', 'tutyspi_snowschurch');
 
 /** MySQL database username */
-//define('DB_USER', 'tutyspi_admin');
+define('DB_USER', 'tutyspi_admin');
 
 /** MySQL database password */
-//define('DB_PASSWORD', 'admin1234');
+define('DB_PASSWORD', 'admin1234');
 
 /** MySQL hostname */
-//define('DB_HOST', 'mysql2.hostdone.com');
+define('DB_HOST', 'mysql2.hostdone.com');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');

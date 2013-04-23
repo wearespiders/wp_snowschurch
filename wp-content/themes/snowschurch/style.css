@@ -14,8 +14,9 @@ body
 {
 	margin:0;
 	padding:0;
-	background-color:#cfcece;
-	font-family: Verdana, sans-serif, Helvetica, Arial;
+	background-image:url(images/ravenna.png);
+	background-repeat:repeat;
+	font-family:Arial, Helvetica, sans-serif;
 }
 
 .root
@@ -32,25 +33,53 @@ body
 }
 	.logo-container
 	{
+		float:left;
 		background-image:url(images/logo-transparent.png);
 		background-repeat:no-repeat;
+		width:494px;
 		height:150px;
 		background-position:bottom left;
 	}
+	.search-container
+	{
+		float:right;
+		width:300px;
+		height:150px;
+	}
+		.socialicons
+		{
+			width:inherit;
+			height:60px;
+			padding-top:15px;
+			padding-left:190px;
+		}
+		.searchform
+		{
+			padding-top:30px;
+			padding-left:10px;
+			width:inherit;
+			height:25px;
+			vertical-align:bottom;
+		}
+
 
 .top-navbar
 {
-	height:40px;
+	clear:both;
+	height:30px;
 }
 
 .page-banner
 {
+	clear:both;
 	background-image:url(images/page-banner01.jpg);
-	height:250px;
+	height:227px;
 }
+
 
 .root-page-body
 {
+	clear:both;
 }
 .root-leftbar
 {
@@ -134,7 +163,7 @@ content
 	padding-left:14px;
 	padding-top:14px;
 	color:#666;
-	font-size:14px;
+	font-size:12px;
 }
 .rightbar-content
 {
@@ -145,6 +174,8 @@ content
 	border-left:#d8d7d5 solid 1px; 
 	border-right:#d8d7d5 solid 1px;
 	padding-bottom:30px;
+	color:#666;
+	font-size:14px;
 }
 .rightbar-endscroll
 {
@@ -184,6 +215,7 @@ font-size:12px;
 {
 text-decoration:none;
 color:#00a1e4;
+text-transform:uppercase;
 }
 
 
@@ -199,6 +231,14 @@ list-style-type:none;
 padding-left:14px;
 padding-top:7px;
 padding-bottom:7px;
+/*border-bottom:#CCC 1px solid ;*/
+border-bottom-style:solid;
+border-bottom-width:1px;
+border-bottom:-moz-linear-gradient(left center, transparent, black, transparent);
+border-bottom:-webkit-gradient(linear, left center, right center,
+                                 color-stop(0, transparent),
+                                 color-stop(0.5, black),
+                                 color-stop(1, transparent));
 }
 
 #leftnav li:hover
@@ -259,4 +299,52 @@ background: linear-gradient(to bottom,  rgba(91,91,91,1) 0%,rgba(0,0,0,1) 100%);
 
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b5b5b', endColorstr='#000000',GradientType=0 ); /* IE6-8 */
 
+}
+
+
+/*
+==============================================================
+Button
+==============================================================
+*/
+    
+    .myButton {
+        
+        background-color:#525150;
+        
+        -moz-border-radius:4px;
+        -webkit-border-radius:4px;
+        border-radius:4px;
+        
+        border:1px solid #525150;
+        
+        display:inline-block;
+        color:#ffffff;
+        font-family:inherit;
+        font-size:11px;
+        font-weight:normal;
+        padding:8px 12px;
+        text-decoration:none;
+        
+        text-shadow:0px 1px 0px #b23e35;
+        
+    }
+    .myButton:hover {
+        
+        background-color:#141413;
+    }
+    .myButton:active {
+        position:relative;
+        top:1px;
+    }
+
+.myTextbox
+{
+	font-family:inherit;
+	line-height:20px;
+	width:200px;
+	font-size:12px;
+	padding:5px;
+	background-color:#cbf0fc;
+	border:none;
 }
