@@ -117,7 +117,7 @@ body
 /* Breacrumb Navigation */
 .breadcrumb{
     width:100%;
-    float:left;
+    float:none;
     padding:0 0 0 0px;
     margin:9px 0 0 0;
     font-size:12px;
@@ -133,6 +133,11 @@ body
 }
 
 /* Content */
+article
+{
+padding-top:18px;
+}
+
 contenttitle
 {
 	font-size: 20px;
@@ -200,8 +205,54 @@ content
 	clear:both;
 }
 
-
 /*
+==============================================================
+Search
+==============================================================
+*/
+#searchresult-title
+{
+padding-top:0px;
+}
+div#searchresult-item:first-child
+{
+padding-top:12px;
+}
+
+#searchresult-summary
+{
+padding-top:2px;
+}
+#searchresult-summary p
+{
+padding:0;
+margin:0;
+}
+#searchresult-footer
+{
+font-size:11px;
+color:#ccc;
+font-style:italic;
+}
+#searchresult-seperator
+{
+margin-top:12px;
+margin-bottom:12px;
+/* The background is used to specify the border background */
+    background: -moz-linear-gradient(45deg, #00a1e4, #fff);
+    background: -webkit-linear-gradient(45deg, #00a1e4, #fff);
+    /* Background origin is the padding box by default.
+    Override to make the background cover the border as well. */
+    -moz-background-origin: border;
+    background-origin: border-box;
+    /* A transparent border determines the width */
+    border-bottom: 1px solid transparent;
+    border-radius: 0px;
+    box-shadow: inset -999px 0 0 #fff; /* The background color */
+}
+
+
+
 ==============================================================
 Left navigation sub-menus
 ==============================================================
