@@ -10,6 +10,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: Snows Church
 */
 
+body, html {padding: 0; margin:0}
 body
 {
 	margin:0;
@@ -111,7 +112,7 @@ body
 {
 	float:left;
 	background-color:#FFF;
-	width:674px; /* 540(total width) - 14*2 (padding) */
+	width:694px; /* 540(total width) - 14*2 (padding) */
 	padding-top:10px;
 	padding-left:20px;
 	padding-right:16px;
@@ -170,14 +171,15 @@ content
 {
 	padding-left:14px;
 	padding-top:14px;
-	color:#666;
-	font-size:12px;
+	color:#333;
+	font-size:14px;
 }
 .rightbar-content
 {
 	width:204px; /* 250px(total width) - margin (14+2) - padding (14*2) - border (1*2) */
 	padding-left:14px;
 	padding-right:14px;
+	padding-top:1px;
 	background-color:#ecebe9;
 	border-left:#d8d7d5 solid 1px; 
 	border-right:#d8d7d5 solid 1px;
@@ -185,11 +187,44 @@ content
 	color:#666;
 	font-size:14px;
 }
+.side-rightbar-menu ul{
+padding:0px; margin:0px; list-style:none;
+}
+.side-rightbar-menu li {
+padding:0px; margin:0px;
+color:#C00;
+font-size:18px;
+font-weight:bold;
+padding-top:5px;
+padding-bottom:5px;
+}
+
+.side-rightbar-menu li a:link, 
+.side-rightbar-menu li a:active, 
+.side-rightbar-menu li a:visited, 
+.side-rightbar-menu li a:hover {
+font-size:14px;
+color:#333;
+text-decoration:none;
+}
+
+.side-rightbar-menu li a:hover {
+text-decoration:underline;
+color:#00a1e4;
+}
+
+
+.side-rightbar-menu li:before {
+  content: "+";
+  padding-right: 5px;
+}
+
 .rightbar-endscroll
 {
 	background-image:url(images/rightbar-endscroll.jpg);
 	background-repeat:no-repeat;
 	height:92px;
+	padding-bottom:25px;
 }
 
 /*************************************************
@@ -230,6 +265,14 @@ padding-bottom:1px;
 font-size:16px;
 font-weight:bold;
 }
+#searchresult-title a:link, 
+#searchresult-title a:active, 
+#searchresult-title a:visited, 
+#searchresult-title a:hover 
+{
+	color:#00F;
+}
+
 #searchresult-item
 {
 padding-top:12px;

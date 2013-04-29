@@ -270,10 +270,11 @@ function my_custom_submenu() {
   }
  
   // display the submenu
-  echo "<ul><li>".the_title()."</li>";
+  //echo "<ul><li>".the_title()."</li>";
+  echo "<ul class='side-rightbar-menu' style='padding:0px; margin:0px; list-style:none;'>";
   foreach ( $menu_items as $item ) {
     if ( $item->menu_item_parent == $current_menu_id ) {
-      $class = ( $item->object_id == $post->ID ) ? "class='current_page_item'" : "";
+      //$class = ( $item->object_id == $post->ID ) ? "class='current_page_item'" : "";
       echo "<li {$class}><a href='{$item->url}'>{$item->title}</a></li>";
     }
   }
