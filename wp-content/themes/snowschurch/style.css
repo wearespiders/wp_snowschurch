@@ -25,9 +25,9 @@ body
 	width:980px;
 	margin:0 auto;
 	background-color:#FFF;
-	-moz-box-shadow: 0 0 75px #666;
-	-webkit-box-shadow: 0 0 75px #666;
-	box-shadow: 0 0 75px #666;
+	-moz-box-shadow: 0 0 50px #666;
+	-webkit-box-shadow: 0 0 50px #666;
+	box-shadow: 0 0 50px #666;
 }
 
 .page-header
@@ -194,7 +194,6 @@ padding:0px; margin:0px; list-style:none;
 padding:0px; margin:0px;
 color:#C00;
 font-size:18px;
-font-weight:bold;
 padding-top:5px;
 padding-bottom:5px;
 }
@@ -204,7 +203,7 @@ padding-bottom:5px;
 .side-rightbar-menu li a:visited, 
 .side-rightbar-menu li a:hover {
 font-size:14px;
-color:#333;
+color:#666;
 text-decoration:none;
 }
 
