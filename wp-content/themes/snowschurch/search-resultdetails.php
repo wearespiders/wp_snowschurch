@@ -11,7 +11,8 @@
 		<?php endif; ?>
 	</div>
 	<div id="searchresult-footer">
-		Created On: <?php echo get_the_date( $d ); ?> | Last updated: <?php the_modified_date();  ?>
+		<!--Created On: <'?php echo get_the_date( $d ); ?> | -->
+        Last updated: <?php the_modified_date();  ?>
 	</div>
 	<div id="searchresult-seperator"></div>
 </div>

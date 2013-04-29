@@ -1,5 +1,5 @@
 <div class="root-page-body">
-	<div class="root-leftbar"><?php get_template_part( 'side', 'leftbar'); ?></div>
+	<div class="root-leftbar"><?php get_template_part( 'side', 'leftbar'); ?></div>	
     <div class="root-page-content">
 	<?php 
 	if ($_GET['submit'] == 'Search') {

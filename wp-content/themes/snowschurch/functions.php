@@ -75,7 +75,6 @@ class CSS_Menu_Maker_Walker extends Walker {
 }
 
 
-
 /***********************************************************************
 * @Author: Boutros AbiChedid 
 * @Date:   February 14, 2011
@@ -234,6 +233,22 @@ function wp_bac_breadcrumb() {
     }   
 }
 
+
+/******************
+remove classes from wp_list_pages
+*******************/
+ 
+function remove_page_class($wp_list_pages) {
+	$pattern = '/\<li class="page_item[^>]*>/';
+	$replace_with = '<li>';
+	$pattern2 = "/\<ul class='children'>/";
+	$replace_with2 = '<ul>';
+	$result1= preg_replace($pattern, $replace_with, $wp_list_pages);
+	$result2= preg_replace($pattern2, $replace_with2, $result1);
+	return $result2;
+}
+add_filter('wp_list_pages', 'remove_page_class');
+
 /***********************************************************************
 * @URL:   http://christianvarga.com/blog/2012/12/how-to-get-submenu-items-from-a-wordpress-menu-based-on-parent-or-sibling/
 * @Description: To get submenu items from a WordPress menu based on parent or sibling
@@ -265,5 +280,6 @@ function my_custom_submenu() {
   
   echo "</ul>";
 }
+
 
 ?>
