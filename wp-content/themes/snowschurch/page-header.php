@@ -2,8 +2,8 @@
     <div class="logo-container"></div>
     <div class="search-container">
         <div class="socialicons">
-<?php addthis_follow(); ?>	
-
+<?php addthis_follow(); ?>
+<?php //echo getFBCountLikes(); ?>	
         </div>
         <div class="searchform"><?php get_template_part( 'search', 'form'); ?>		</div>
     </div>

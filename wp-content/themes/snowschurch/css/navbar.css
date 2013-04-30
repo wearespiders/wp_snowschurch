@@ -7,11 +7,12 @@
   position: relative;
 }
 #cssmenu {
+float:left;
   height: 30px;
   border-radius: 5px 5px 0 0;
   -moz-border-radius: 5px 5px 0 0;
   -webkit-border-radius: 5px 5px 0 0;
-  background: #141414;
+/*  background: #141414;
   background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAxCAIAAACUDVRzAAAAA3NCSVQICAjb4U/gAAAALElEQVQImWMwMrJi+v//PxMDw3+m//8ZoPR/qBgDEhuXGLoeYswhXg8R5gAAdVpfoJ3dB5oAAAAASUVORK5CYII=) 100% 100%; 
   background: -moz-linear-gradient(top, #32323a 0%, #141414 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #32323a), color-stop(100%, #141414));
@@ -19,7 +20,7 @@
   background: -o-linear-gradient(top, #32323a 0%, #141414 100%);
   background: -ms-linear-gradient(top, #32323a 0%, #141414 100%);
   background: linear-gradient(to bottom, #32323a 0%, #141414 100%);
-  border-bottom: 2px solid #0fa1e0;
+  border-bottom: 2px solid #0fa1e0;*/
 }
 #cssmenu:after,
 #cssmenu ul:after {
@@ -28,14 +29,14 @@
   clear: both;
 }
 #cssmenu a {
-  background: #141414;
+/*  background: #141414;
   background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAxCAIAAACUDVRzAAAAA3NCSVQICAjb4U/gAAAALElEQVQImWMwMrJi+v//PxMDw3+m//8ZoPR/qBgDEhuXGLoeYswhXg8R5gAAdVpfoJ3dB5oAAAAASUVORK5CYII=) 100% 100%; 
   background: -moz-linear-gradient(top, #32323a 0%, #141414 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #32323a), color-stop(100%, #141414));
   background: -webkit-linear-gradient(top, #32323a 0%, #141414 100%);
   background: -o-linear-gradient(top, #32323a 0%, #141414 100%);
   background: -ms-linear-gradient(top, #32323a 0%, #141414 100%);
-  background: linear-gradient(to bottom, #32323a 0%, #141414 100%);
+  background: linear-gradient(to bottom, #32323a 0%, #141414 100%);*/
   color:#CCC;
   text-transform:uppercase;
   display: inline-block;

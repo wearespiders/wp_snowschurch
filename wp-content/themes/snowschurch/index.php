@@ -6,5 +6,5 @@
 <?php get_template_part( 'page', 'body'); ?>
 <?php get_template_part( 'bottom', 'navbar'); ?>
 <?php get_template_part( 'footer', 'authorbar'); ?>
-<?php get_template_part( 'footer', 'disclaimer'); ?>
 </div>
+<?php get_template_part( 'footer', 'disclaimer'); ?>

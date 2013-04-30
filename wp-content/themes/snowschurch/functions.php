@@ -282,5 +282,32 @@ function my_custom_submenu() {
   echo "</ul>";
 }
 
+/*************************************
+Integrating Disqus Into WordPress Without a Plugin
+**************************************/
+function disqus_embed($disqus_shortname) {
+    global $post;
+    wp_enqueue_script('disqus_embed','http://'.$disqus_shortname.'.disqus.com/embed.js');
+    echo '<div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = "'.$disqus_shortname.'";
+        var disqus_title = "'.$post->post_title.'";
+        var disqus_url = "'.get_permalink($post->ID).'";
+        var disqus_identifier = "'.$disqus_shortname.'-'.$post->ID.'";
+    </script>';
+}
 
+function getFBCountLikes()
+{
+$source_url = "https://www.facebook.com/ourladyofsnows";  //This could be anything URL source including stripslashes($_POST['url'])
+$url = "http://api.facebook.com/restserver.php?method=links.getStats&urls=".urlencode($source_url);
+$xml = file_get_contents($url);
+$xml = simplexml_load_string($xml);
+//$shares =  $xml->link_stat->share_count;
+$likes =  $xml->link_stat->like_count;
+/*$comments = $xml->link_stat->comment_count;
+$total = $xml->link_stat->total_count;
+$max = max($shares,$likes,$comments);*/
+return $likes;
+}
 ?>

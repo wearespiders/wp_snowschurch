@@ -9,4 +9,6 @@ wp_nav_menu(array(
 )); 
 ?>
     </div>
+    <div class="top-navbar-fblikebox">
+    <div class="fb-like" data-href="https://www.facebook.com/ourladyofsnows" data-send="false" data-layout="button_count" data-width="75" data-show-faces="false"></div></div>
 </div>
