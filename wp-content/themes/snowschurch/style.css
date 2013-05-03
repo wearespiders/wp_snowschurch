@@ -241,10 +241,10 @@ Footer Sitemap
 	background-color:#000;
 	padding:5px;
 }
-.footer-sitemap a {text-decoration:none; font-size:12px; color:#02a5e6;}
+.footer-sitemap a {text-decoration:none; font-size:12px; color:#fff;}
 .footer-sitemap a:hover {text-decoration:underline;}
 .footer-sitemap > li { display: inline-block; vertical-align: top; margin: 0 20px; list-style-type:none;line-height:30px;}
-.footer-sitemap> ul:first-of-type > li:first-child > a { font-weight: bold; color:#FFF; padding:0}
+.footer-sitemap> li li a {text-decoration:none; font-size:12px; color:#02a5e6;}
 .footer-sitemap ul {list-style-type:none; padding:0;}
 
 .footer-authorbar
