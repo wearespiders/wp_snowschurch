@@ -257,11 +257,12 @@ function mailchimp_form_field($var, $num_fields) {
 	$html = '';
 	// See if that var is set as required, or turned on (for display)
 	if ($var['req'] || get_option($opt) == 'on') {
-		$label = '<label for="'.esc_attr($opt).'" class="mc_var_label">'.esc_html($var['name']);
+	// Forcing not to render labels for form field
+		/*$label = '<label for="'.esc_attr($opt).'" class="mc_var_label">'.esc_html($var['name']);
 		if ($var['req'] && $num_fields > 1) {
 			$label .= '<span class="mc_required">*</span>';
 		}
-		$label .= '</label>';
+		$label .= '</label>';*/
 	
 		$html .= '
 <div class="mc_merge_var">
