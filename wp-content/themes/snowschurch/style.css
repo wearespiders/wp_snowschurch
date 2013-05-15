@@ -189,14 +189,12 @@ content
 	border-right:#d8d7d5 solid 1px;
 	color:#666;
 	font-size:14px;
-	padding-bottom:10px;
-	background-color:blue;
+	padding-bottom:20px;
 }
 .rightbar-content-container
 {
-	padding- :8px;
-	margin:8px;
-	background-color:red;
+	padding-left:10px;
+	padding-right:10px;
 }
 
 .side-rightbar-menu ul{
@@ -239,7 +237,6 @@ color:#00a1e4;
 
 #SubscribeForm{
 	text-align:left;
-	margin-left:-5px;
 }
 
 /*************************************************
@@ -491,7 +488,7 @@ Button
 	border:none;
 }
 
-    .SubscribeButton {
+ .SubscribeButton {
         background-color:#525150;
         -moz-border-radius:4px;
         -webkit-border-radius:4px;
@@ -504,8 +501,8 @@ Button
         font-weight:normal;
         text-decoration:none;
 		padding:5px;
-		padding-left:10px;
 		padding-right:10px;
+		margin-top:5px;
     }
     .SubscribeButton:hover {
         
@@ -518,6 +515,7 @@ Button
 #mc_subheader
 {
 font-size:12px;
+padding-bottom:3px;
 }
 	
 .SubscribeTextbox
@@ -530,3 +528,4 @@ font-size:12px;
 	background-color:#fff;
 	border:none;
 }
+   
