@@ -308,6 +308,6 @@ $likes =  $xml->link_stat->like_count;
 /*$comments = $xml->link_stat->comment_count;
 $total = $xml->link_stat->total_count;
 $max = max($shares,$likes,$comments);*/
-return $likes;
+echo (number_format(floatval($likes)));
 }
 ?>

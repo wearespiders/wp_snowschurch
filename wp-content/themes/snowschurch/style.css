@@ -17,7 +17,13 @@ body
 	padding:0;
 	background-image:url(images/ravenna.png);
 	background-repeat:repeat;
-	font-family:'Droid Sans', sans-serif;
+	font-family: 'Droid Sans', sans-serif;
+	/* Anti-aliasing issue fix for Chrome browser using Google Web Font*/
+	/*font-style:normal;
+	font-weight:normal;
+	font-variant:normal;
+	text-shadow: 0 0 1px #454343;*/
+	/*-webkit-text-stroke: 5px transparent;*/
 }
 
 .root
@@ -195,6 +201,8 @@ content
 {
 	padding-left:10px;
 	padding-right:10px;
+	font-size:13px;
+	line-height:20px;
 }
 
 .side-rightbar-menu ul{
@@ -489,11 +497,11 @@ Button
 }
 
  .SubscribeButton {
-        background-color:#525150;
+        background-color:#999;
         -moz-border-radius:4px;
         -webkit-border-radius:4px;
         border-radius:4px;
-        border:1px solid #525150;
+        border:1px solid #999;
         display:inline-block;
         color:#ffffff;
         font-family:inherit;
@@ -506,7 +514,7 @@ Button
     }
     .SubscribeButton:hover {
         
-        background-color:#141413;
+        background-color:#666;
     }
     .SubscribeButton:active {
         top:1px;
@@ -514,7 +522,8 @@ Button
 
 #mc_subheader
 {
-font-size:12px;
+font-size:13px;
+line-height:20px;
 padding-bottom:3px;
 }
 	
@@ -527,5 +536,15 @@ padding-bottom:3px;
 	padding:5px;
 	background-color:#fff;
 	border:none;
+}
+
+.likescount
+{
+font-size:25px;
+color:#999;
+}
+.devotees
+{
+font-size:14px;
 }
    
