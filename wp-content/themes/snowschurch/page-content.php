@@ -11,6 +11,10 @@
 endwhile; endif;
 	?>
     </content>
+    <?php
+	if (strpos($_SERVER["REQUEST_URI"],'blogs')>0 || strpos($_SERVER["REQUEST_URI"],'comments')>0 || strpos($_SERVER["REQUEST_URI"],'media')>0) 
+	{
+	?>
     <div id="comments">
     <div id="disqus_thread"></div>
     <script type="text/javascript">
@@ -24,4 +28,7 @@ endwhile; endif;
     </script>
     <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments.</a></noscript>
     </div>
+    <?php
+	}
+	?>
 </article>

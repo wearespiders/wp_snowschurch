@@ -1,5 +1,8 @@
 <?php
+add_theme_support( 'post-thumbnails' );
 
+if ( function_exists('register_sidebar') )
+    register_sidebar();
 
 function register_my_menus() {
   register_nav_menus(
